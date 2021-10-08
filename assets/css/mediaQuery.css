@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* Header Nav CSS */
+    .contact {
+        margin-right: 25px;
+    }
+    .free-consultation a,
+    .query p,
+    .language select {
+        font-size: 13px !important;
+        font-family: var(--rajdhani-font);
+    }
+    /* Header Nav CSS End */
+
+    .why-work-with-kws .left-side {
+        height: 50%;
+    }
+
+    .why-work-with-kws .section-details {
+        font-size: 12px;
+    }
+
+    .who-we-are .statistics {
+        width: 80%;
+    }
+
+    .who-we-are .statistics .card-body .top .card-item,
+    .who-we-are .statistics .card-body .top .card-item + span {
+        font-size: 45px;
+    }
+
+    .who-we-are .statistics .card-body .top .image img {
+        height: 50px;
+        width: auto;
+    }
+
+    .who-we-are .statistics .card-body .top .image {
+        height: 65px;
+    }
+
+    .who-we-are .statistics .card-body p {
+        font-size: 11px;
+    }
+
+    /* why-do-business-with-us */
+    section .section-title {
+        font-size: 22px;
+    }
+    /* why-do-business-with-us end */
+
+    /* who-we-are */
+    .our-service .testimonial-area .card .card-list .list-item span {
+        font-size: 12px;
+    }
+    /* who-we-are end */
+
+    /* our-service */
+    .our-service .testimonial-area .card {
+        width: 360px;
+    }
+    /* our-service end */
+
+    /* work-with-us */
+    .customer-satisfaction-rate .card {
+        width: 500px;
+        height: 84%;
+    }
+    /* work-with-us end */
+
+    /* company-leaders */
+
+    .our-leadership .section-details {
+        padding-left: 5rem;
+    }
+
+    /* company-leaders end */
+
+    /* subscription */
+    .subscription {
+        padding: 61px 4rem;
+    }
+    /* subscription end */
+
+    /* news-update */
+    .news-update .card {
+        width: 22.8rem;
+    }
+    .news-update .section-details {
+        width: 89%;
+    }
+    .news-update .details {
+        padding: 0 15rem;
+    }
+    .news-update .card {
+        width: 17.8rem;
+        height: 22.8rem;
+    }
+    /* news-update end */
+
+    /* office-address */
+    .office-address .card .right-side .address {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .office-address .card .right-side p {
+        font-size: 13px;
+    }
+    /* office-address end */
+
+    /* footer */
+    .footer .navigation-area {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 6rem;
+    }
+
+    .footer .links {
+        padding-top: 4rem;
+        padding-left: 2.5rem;
+    }
+    /* footer end */
+
+    /*------------------------------ about us page CSS -----------------------------*/
+    /* about us */
+    .why-work-with-kws.about-us-page .section-details {
+        font-size: 11px;
+    }
+
+    .why-work-with-kws.about-us-page .card-body {
+        padding-left: 5rem;
+    }
+    .our-strength .section-details {
+        font-size: 14px;
+    }
+    /* about us end */
+
+    /* why-kwsme */
+    .why-kwsme .why-kwsme-details .section-details {
+        font-size: 13px;
+    }
+
+    .why-kwsme .why-kwsme-image img {
+        height: auto;
+        width: 100%;
+    }
+    .reasons .reasons-lists .lists {
+        font-size: 17px;
+        padding: 0.4rem 0;
+    }
+    .why-kwsme .why-kwsme-image,
+    .why-kwsme {
+        height: unset;
+    }
+    .why-kwsme .why-kwsme-details {
+        padding: 2rem 0rem 0rem 6rem;
+    }
+    /* why-kwsme end */
+
+    /* company-vision */
+    .company-vision .card {
+        padding: 0.5rem;
+        height: 10.8rem;
+    }
+    .company-vision .card .card-body .card-details .card-title {
+        font-size: 22px;
+    }
+    .company-vision .card .card-body .card-details .details {
+        font-size: 12px;
+    }
+    /* company-vision end */
+    /*----------------------------- about us page CSS end ---------------------------*/
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .who-we-are .statistics .card-body p {
+        font-size: 13px;
+    }
+    /* Header Nav CSS */
+    .contact {
+        margin-right: 25px;
+    }
+
+    .nav-item .btn {
+        padding: 14px 37px;
+    }
+    /* Header Nav CSS End */
+
+    .why-work-with-kws .left-side {
+        height: 50%;
+    }
+
+    .why-work-with-kws .section-details {
+        font-size: 12px;
+    }
+
+    .who-we-are .statistics {
+        width: 80%;
+    }
+
+    .who-we-are .statistics .card-body .top .card-item,
+    .who-we-are .statistics .card-body .top .card-item + span {
+        font-size: 45px;
+    }
+
+    .who-we-are .statistics .card-body .top .image img {
+        height: 50px;
+        width: auto;
+    }
+
+    .who-we-are .statistics .card-body .top .image {
+        height: 65px;
+    }
+
+    .who-we-are .statistics .card-body p {
+        font-size: 11px;
+    }
+
+    /* who-we-are */
+    .our-service .testimonial-area .card .card-list .list-item span {
+        font-size: 14px;
+    }
+    /* who-we-are end */
+
+    /* our-service */
+    .our-service .testimonial-area .card {
+        width: 314px;
+    }
+
+    .our-service .testimonial-area .card .card-title {
+        font-size: 25px !important;
+    }
+
+    .our-service .testimonial-area .card .card-list .list-item {
+        padding-top: 0.1rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .our-service .testimonial-area .card .card-list .list-item span {
+        font-size: 13px;
+    }
+    /* our-service end */
+
+    /* work-with-us */
+    .customer-satisfaction-rate .card {
+        width: 500px;
+        height: 84%;
+    }
+    /* work-with-us end */
+
+    /* our-progress */
+    .our-process-stages .card {
+        width: 218px;
+    }
+
+    .owl-carousel#leadership .owl-item {
+        width: 344px !important;
+    }
+
+    .our-leadership .section-details {
+        padding-left: 6rem;
+        min-width: 450px;
+    }
+    /* our-progress end */
+
+    /* subscription */
+    .subscription {
+        padding: 61px 4rem;
+    }
+    /* subscription end */
+
+    /* news-update */
+    .news-update .card {
+        position: relative;
+        width: 20.8rem;
+        height: 26.8rem;
+    }
+    .news-update .card .card-body .news-details .news-title {
+        font-size: 25px;
+        line-height: 25px;
+        font-family: var(--rajdhani-font);
+        font-weight: 600;
+        max-width: 19.438rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        max-height: 75px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        z-index: 1;
+    }
+    /* news-update end */
+
+    /* office-address */
+    .office-address .card .right-side .address {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    /* office-address end */
+
+    /* footer */
+    .footer .navigation-area {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 6rem;
+    }
+    .footer .links {
+        padding-top: 4rem;
+        padding-left: 4rem;
+    }
+    /* footer end */
+
+    /*---------------------------- about us page CSS ---------------------------*/
+    /* about us */
+    .why-work-with-kws.about-us-page .section-details {
+        font-size: 12px;
+    }
+
+    .why-work-with-kws.about-us-page .card-body {
+        padding-left: 8rem;
+    }
+    /* about us end */
+
+    /* our strength */
+    .our-strength .section-details {
+        font-size: 14px;
+    }
+    /* our strength end */
+
+    /* why-kwsme */
+    .why-kwsme .why-kwsme-image img {
+        height: inherit;
+        width: inherit;
+    }
+
+    .why-kwsme .why-kwsme-details .section-details {
+        font-size: 14px;
+    }
+    .reasons .reasons-lists .lists {
+        font-size: 21px;
+    }
+    .why-kwsme .why-kwsme-details {
+        padding: 4rem 0rem 4rem 10rem;
+    }
+    /* why-kwsme end */
+
+    /* company-vision */
+    .company-vision .card {
+        padding: 1rem;
+        height: 13.8rem;
+    }
+    /* company-vision end */
+    /*-------------------------- about us page CSS end --------------------------*/
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px !important;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0px 0.525rem;
+    }
+
+    .nav-item .btn {
+        padding: 16px 43px;
+        border-radius: 3px !important;
+    }
+
+    .nav-item.query p.number {
+        font-size: 20px !important;
+        font-weight: 800;
+    }
+
+    .contact {
+        margin-right: 15px;
+    }
+    .custom p:first-child {
+        font-size: 16px;
+    }
+
+    .carousel-caption.custom {
+        width: 30%;
+    }
+
+    .carousel-title {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .carousel-caption .carousel-description {
+        font-size: 16px;
+        color: #5c5c5c;
+        padding: 20px 0;
+    }
+
+    .custom-btn {
+        padding: 15px 35px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .company-formation p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 44px;
+    }
+
+    .testimonial-description h4 {
+        font-size: 33px;
+    }
+
+    .testimonial-description p {
+        margin-bottom: 0px;
+    }
+
+    .testimonial-description:hover .details-btn {
+        padding: 15px 30px;
+    }
+
+    .our-process-stages .row div {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
