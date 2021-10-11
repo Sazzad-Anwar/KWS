@@ -116,8 +116,8 @@ $(document).ready(function () {
         })
     })
 
-    // setTimeout(() => {
-    //     $('#offer-modal-button').click();
-    // }, 3000)
+    setTimeout(() => {
+        $('#offer-modal-button').click();
+    }, 3000)
 
 });
