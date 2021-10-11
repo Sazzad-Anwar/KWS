@@ -27,6 +27,7 @@ button:active,
 button:focus,
 custom-control-input:checked,
 custom-control-input:not(checked),
+a.page-link,
 .btn:focus {
     box-shadow: inset 0 0px 0 #ddd !important;
 }
@@ -128,6 +129,11 @@ section .details {
     display: flex !important;
 }
 
+.card .form-control,
+.card .input-group-text {
+    border-radius: 0px;
+}
+
 .hero {
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,6 +161,302 @@ section .details {
 
 .hero .breadcrumb p {
     font-weight: bold;
+}
+
+.pagination {
+    margin: 2rem 0;
+    height: 3rem;
+    position: relative;
+}
+
+.pagination nav {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%, 0px);
+}
+
+.pagination .page-link {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0.375rem 0.9rem;
+    color: #000;
+    font-size: 18px;
+}
+
+.pagination .page-link:hover {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #1256dd !important;
+    border-radius: 50% !important;
+}
+
+.page-item.active .page-link {
+    background-color: #1256dd !important;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: 9px;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border-radius: 50% !important;
+}
+
+.nav-link.active {
+    color: #1256dd !important;
+}
+
+.mega-menu.card::before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 37%;
+    border: 10px solid transparent;
+    border-bottom-color: #1256dd;
+    content: '';
+    margin-top: -20px;
+}
+
+.nav-item .nav-link + .mega-menu.card {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 2rem;
+    border: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mega-menu.card .card-area {
+    border-top: 3px solid #1256dd;
+    background: #fff;
+    padding: 2rem;
+}
+
+.mega-menu.card .card-area.investment-details {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.nav-item:hover .nav-link + .mega-menu.card {
+    display: block;
+    z-index: 1;
+}
+
+.card-area.investment-details a .items > span {
+    transition: font-weight 0.3s ease-in-out;
+}
+
+.card-area.investment-details a .items:hover > span {
+    font-weight: bold;
+}
+
+/* free-consultation modal */
+.free-consultation .modal-content {
+    background-color: rgba(5, 55, 105, 0.94);
+}
+
+.free-consultation .modal-header,
+.offer-popup-modal .modal-header,
+.offer-popup-modal .modal-footer,
+.free-consultation .modal-footer {
+    border: 0px;
+}
+
+.modal-header button {
+    height: 45px;
+    width: 45px;
+    background-color: #d82f5a;
+}
+.modal-header {
+    padding: 0rem;
+}
+
+.offer-popup-modal .modal-content {
+    border-radius: 0px;
+    background-color: #003364;
+}
+
+.offer-popup-modal .btn-close {
+    background: url('../images/close-btn-small.png');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    border: 0;
+    border-radius: 0;
+}
+
+.offer-popup-modal .modal-body .offer-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.offer-popup-modal .modal-body {
+    color: #fff;
+}
+.offer-popup-modal .modal-body .year {
+    font-size: 18px;
+    font-family: var(--rajdhani-font);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+}
+
+.offer-popup-modal .modal-body .offer-name {
+    font-size: 18px;
+    font-family: var(--rajdhani-font);
+    font-weight: bold;
+    background-color: #1256dd;
+    padding: 5px 5px;
+    line-height: 18px;
+    text-align: left;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.offer-popup-modal .modal-body .month {
+    font-size: 76px;
+    font-family: var(--rajdhani-font);
+    font-weight: bold;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.offer-popup-modal .modal-body .card {
+    border-radius: 0rem;
+    border: 0px;
+}
+
+.offer-popup-modal .modal-body .free {
+    text-align: center;
+}
+
+.offer-popup-modal .modal-body .free .card-title {
+    font-size: 22px;
+    font-family: var(--rajdhani-font);
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background: linear-gradient(#ae163d, #570b1f);
+    color: #fff;
+    margin-bottom: 0rem;
+}
+
+.offer-popup-modal .modal-body .free.dubai-mainland .card-title {
+    background: linear-gradient(#e78733, #570b1f);
+}
+
+.offer-popup-modal .modal-body .free.premium .card-title {
+    background: linear-gradient(#00adab, #045d5c);
+}
+
+.offer-popup-modal .modal-body .free .type {
+    font-size: 10px;
+    background-color: #d82f5a;
+    padding: 0.5rem 2rem;
+}
+
+.offer-popup-modal .modal-body .free.dubai-mainland .type {
+    background-color: #e78733;
+}
+.offer-popup-modal .modal-body .free.premium .type {
+    background-color: #00adab;
+}
+
+.offer-popup-modal .modal-body .free .price {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #c6264f;
+    padding: 0.5rem 2rem;
+}
+
+.offer-popup-modal .modal-body .free.dubai-mainland .price {
+    background-color: #d07425;
+}
+.offer-popup-modal .modal-body .free.premium .price {
+    background-color: #009694;
+}
+
+.offer-popup-modal .modal-body .free .price .aed {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+}
+
+.offer-popup-modal .modal-body .free .price .or {
+    font-size: 10px;
+    padding: 0rem;
+}
+
+.offer-popup-modal .modal-body .button {
+    padding: 1rem 0rem 1.5rem 0rem;
+    background: linear-gradient(#d82f5a, #310712);
+}
+
+.offer-popup-modal .modal-body .dubai-mainland .button {
+    background: linear-gradient(#e78733, #6c182d);
+}
+.offer-popup-modal .modal-body .premium .button {
+    background: linear-gradient(#00adab, #0c3c3c);
+}
+
+.offer-popup-modal .modal-body .custom-btn.bg-black {
+    padding: 12px 24px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.free-consultation .modal-body .card {
+    width: 673px;
+}
+
+.free-consultation .modal-body .talk-with-us {
+    margin-top: 2rem;
+}
+
+.free-consultation .modal-body form .custom-btn {
+    margin-top: 4rem;
+}
+
+/* free-consultation modal end */
+
+.section-details.full-width {
+    margin: 0 31rem;
+}
+
+.card-with-img-details {
+    display: flex;
+    justify-content: space-between;
+    border: 0px;
+}
+
+.card-with-img-details img {
+    height: 100%;
+    width: auto;
+}
+
+.card-with-img-details .card-body {
+    padding-left: 1rem !important;
+}
+
+.card-with-img-details .title {
+    font-size: 33px !important;
+    font-family: var(--rajdhani-font);
+    font-weight: 600 !important;
+}
+
+.card-with-img-details .details {
+    font-size: 15px !important;
+    color: #5c5c5c;
+}
+
+.talk-with-us + .office-address {
+    margin-top: 0rem;
 }
 
 /*-------------------------------------------- Home Page CSS ---------------------------------------------*/
@@ -195,7 +497,7 @@ section .details {
 }
 
 .nav-link:hover {
-    border-bottom: 2px solid #1256dd;
+    color: #1256dd !important;
 }
 
 .nav-item select {
@@ -893,7 +1195,7 @@ ul.navbar-nav {
 
 .our-leadership .employees:hover::after {
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
 .our-leadership .employees .details {
@@ -1011,7 +1313,7 @@ ul.navbar-nav {
 
 .news-update .card {
     position: relative;
-    width: 24.8rem;
+    width: 23.8rem;
     height: 29.8rem;
 }
 
@@ -1036,7 +1338,12 @@ ul.navbar-nav {
     padding: 0rem 1rem;
 }
 
-.news-update .card .card-body .news-time {
+.news-update .card .custom-btn {
+    background-color: #1256dd;
+}
+
+.news-update .card .card-body .news-time,
+.news-photo .news-time {
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -1053,13 +1360,15 @@ ul.navbar-nav {
     padding: 0.3rem 1.5rem;
 }
 
-.news-update .card .card-body .news-time .date {
+.news-update .card .card-body .news-time .date,
+.news-photo .news-time .date {
     font-size: 37px;
     font-weight: bold;
     color: #fff;
     height: 37px;
 }
-.news-update .card .card-body .news-time .month {
+.news-update .card .card-body .news-time .month,
+.news-photo .news-time .month {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -1105,11 +1414,10 @@ ul.navbar-nav {
 
 .news-update .card .card-body .news-details .custom-btn {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 1.5rem;
     z-index: 1;
 }
-
 /* news-update-area end */
 
 /* office-address */
@@ -1200,6 +1508,10 @@ ul.navbar-nav {
     border-bottom: 1px solid #013e7b !important;
 }
 
+.border-bottom-light {
+    border-bottom: 1px solid #d3d3d3 !important;
+}
+
 .border-end {
     border-right: 1px solid #013e7b !important;
 }
@@ -1280,13 +1592,34 @@ ul.navbar-nav {
     background-position: center;
 }
 
-.about-us-page .hero {
-    background-image: url('../images/aboutus-hero-bg.png');
+.hero {
+    position: relative;
     height: 18rem;
 }
 
-.about-us-page .hero {
+.hero {
     color: #fff;
+}
+
+.hero img {
+    position: absolute;
+    height: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.breadcrumb-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.breadcrumb-area .page-title {
+    text-align: center;
 }
 
 .why-work-with-kws.about-us-page {
@@ -1312,7 +1645,7 @@ ul.navbar-nav {
 }
 
 .why-work-with-kws.about-us-page .card::before {
-    width: 10.2rem;
+    max-width: 10.2rem;
 }
 
 /* talk-with-us */
@@ -1419,4 +1752,525 @@ ul.navbar-nav {
 }
 /* company-vision end */
 
+/* our-leadership */
+.about-us-page .our-leadership {
+    background: url('../images/our-leadership-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 6rem 0rem;
+}
+
+.about-us-page .our-leadership .section-details p {
+    color: #fff;
+}
+
+.about-us-page .our-leadership .section-details {
+    all: unset;
+    color: #fff;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.about-us-page .our-leadership .employees {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.about-us-page .our-leadership .employees .details,
+.about-us-page .our-leadership .employees .social-media {
+    opacity: 1;
+}
+
+.about-us-page .our-leadership .employees::after {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.about-us-page .our-leadership .custom-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.about-us-page .news-update .custom-btn:first-child {
+    background-color: transparent;
+    border: 1px solid #1256dd;
+}
+
+/* our-leadership end */
+
 /*----------------------------------------------- about us page CSS end --------------------------------------------*/
+
+/*---------------------------------------- latest news update and details CSS ---------------------------------------*/
+.news-and-updated-details {
+    margin: 6rem 0;
+}
+
+.news-and-updated-details .news-details .topic {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1256dd;
+}
+
+.news-and-updated-details .news-details .news-title {
+    font-size: 36px;
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 95px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-credit-and-share-media {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.share-on-media img {
+    height: 16px;
+    width: auto;
+    margin: 0 0.3rem;
+}
+
+.news-photo {
+    position: relative;
+    height: 552px;
+}
+
+.news-photo img {
+    height: inherit;
+    width: 100%;
+}
+
+.latest-article-area {
+    padding: 2rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.latest-article-area .section-title {
+    font-size: 30px;
+    text-align: left;
+}
+
+.latest-article-area .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0px;
+    background-color: #f9f9f9;
+    flex-direction: row;
+    margin: 1.5rem 0;
+}
+
+.latest-article-area .card img {
+    height: 80px;
+    width: 80px;
+}
+
+.latest-article-area .card-body {
+    padding: 0rem 1rem;
+}
+
+.latest-article-area .news-title {
+    font-size: 19px !important;
+    font-weight: 600;
+    font-family: var(--rajdhani-font);
+    line-height: 23px;
+}
+
+.latest-article-area .date {
+    font-size: 12px;
+    color: #1256dd;
+    padding-top: 1rem;
+}
+
+.latest-article-area.subscribe-area {
+    background: url('../images/news-details-subscribe-bg.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #fff;
+}
+
+.latest-article-area.subscribe-area .section-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 33px;
+}
+
+.latest-article-area.subscribe-area .section-details,
+.latest-article-area.subscribe-area .unsubscribe {
+    font-size: 13px;
+    padding: 0.5rem 1rem 1.5rem 0.5rem;
+    text-align: center;
+}
+
+.latest-article-area.subscribe-area .unsubscribe {
+    padding-top: 0rem;
+}
+
+.news-and-updated-details .border-end,
+.news-and-updated-details .border-bottom {
+    border-color: #d3d3d3 !important;
+}
+
+.about-the-author {
+    margin: 3rem 0 4rem 0;
+}
+
+.about-the-author .title,
+.leave-a-comment .section-title {
+    font-size: 30px;
+    font-family: var(--rajdhani-font);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-the-author .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0px;
+    flex-direction: row;
+}
+
+.about-the-author .card img {
+    height: 137px;
+    width: 122px;
+}
+
+.about-the-author .card-body {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.about-the-author .author-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1256dd;
+}
+
+.about-the-author .author-description {
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+.leave-a-comment.talk-with-us .email-area .input-group textarea {
+    height: 205px !important;
+}
+
+/*---------------------------------------- latest news update and details CSS end -------------------------------------*/
+
+/*---------------------------------------- incorporate business in dubai CSS -------------------------------------*/
+.features-of-dubai-mainland {
+    margin: 0rem 0 3rem 0;
+}
+
+.features-of-dubai-mainland .section-title {
+    text-align: left;
+    font-size: 26px;
+}
+
+.features-of-dubai-mainland .feature-list {
+    padding-left: 0rem;
+}
+
+.features-of-dubai-mainland .feature-list .list-item {
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    line-height: 2rem;
+}
+.features-of-dubai-mainland .feature-list .list-item span {
+    padding-left: 1rem;
+}
+
+.features-of-dubai-mainland .feature-list:last-child {
+    margin-left: 4rem;
+}
+
+.why-work-with-kws.about-us-page.incorporate-business {
+    background: unset !important;
+}
+
+.mainland-company {
+    background: url('../images/mainlan-company-bg.png');
+    height: 40.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.mainland-company.company-formation .card {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.mainland-company.company-formation .card .details {
+    font-size: 13px;
+}
+
+.privacy-policy {
+    margin: 6rem 0;
+}
+
+.privacy-policy .policy {
+    margin: 3rem 0;
+}
+
+.privacy-policy .policy .policy-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: var(--rajdhani-font);
+}
+
+.privacy-policy .policy .policy-details {
+    font-size: 16px;
+    color: #5c5c5c;
+}
+/*---------------------------------------- incorporate business in dubai CSS end -------------------------------------*/
+
+/*---------------------------------------- contact us -------------------------------------*/
+.contact-us {
+    margin: 4rem 0rem;
+}
+
+.company-contact-area {
+    margin: 3rem 0;
+}
+
+.company-contact-area .card {
+    border: 0px;
+    padding: 0.5rem 1rem;
+    height: 140px;
+}
+
+.company-contact-area .card .right-side {
+    margin-left: 2rem;
+}
+
+.company-contact-area .card .right-side p {
+    margin-bottom: 0rem;
+    font-size: 26px;
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+}
+
+.company-contact-area .card .right-side .address {
+    font-size: 15px;
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.inquiry-form {
+    background: url('../images/enquiry-form-bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 758px;
+}
+
+.inquiry-form .free-consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 758px;
+}
+
+.inquiry-form .free-consultation .card {
+    width: 80%;
+    background-color: #003366;
+    color: #fff;
+}
+
+.inquiry-form .free-consultation .card .custom-btn {
+    margin-top: 4rem;
+}
+
+.google-map,
+.google-map iframe {
+    height: 520px;
+    width: 100%;
+}
+
+/*---------------------------------------- contact us end -------------------------------------*/
+
+/*---------------------------------------- make business in dubai -------------------------------------*/
+.best-investment {
+    margin: 6rem 0;
+}
+
+.best-investment-cards {
+    padding: 4rem 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.best-investment-cards.flex-row-reverse {
+    border-bottom: 0px;
+}
+
+.best-investment-cards > img {
+    height: auto;
+    width: auto;
+}
+
+.investment-details {
+    margin-left: 1.5rem;
+}
+
+.best-investment-cards.flex-row-reverse .investment-details {
+    margin-left: unset;
+    margin-right: 1.5rem;
+}
+
+.investment-details .title {
+    font-size: 33px;
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+}
+
+.investment-details .details {
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.investment-details .sub-title {
+    font-size: 26px;
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+}
+
+.investment-details .lists {
+    list-style: none;
+    padding-left: 0rem;
+    margin-bottom: 2rem;
+}
+
+.investment-details .items {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.investment-details a {
+    text-decoration: none;
+}
+
+.investment-details .items > img {
+    height: 100%;
+    width: auto;
+    padding-top: 0.8rem;
+}
+
+.investment-details .custom-btn {
+    margin-top: 4rem;
+}
+
+.talk-with-us.make-business-in-dubai {
+    background: url('../images/talk-with-us-make-business-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0rem;
+    padding: 4rem 0;
+}
+
+.formation-of-llc {
+    margin-top: 6rem;
+}
+
+.frequently-ask-question {
+    margin-top: 6rem;
+    padding: 4rem 0;
+    background: url('../images/frequently-ask-question-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frequently-ask-question .accordion {
+    width: 100%;
+}
+
+.frequently-ask-question .accordion:nth-child(2) {
+    margin-left: 0.5rem;
+}
+
+.faq-person-img img {
+    height: 662px;
+    width: 500px;
+}
+
+.frequently-ask-question .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #003366;
+}
+
+.frequently-ask-question .accordion-header button {
+    font-size: 22px !important;
+    font-family: var(--rajdhani-font);
+    font-weight: 600 !important;
+    padding: 1.19rem 1.25rem !important;
+}
+
+.frequently-ask-question .accordion-body {
+    font-size: 16px !important;
+    color: #5c5c5c;
+}
+
+.frequently-ask-question .accordion-item {
+    margin: 0.8rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../images/accordion-hide.png') !important;
+    background-position: center;
+    background-size: auto;
+}
+
+.accordion-button::after {
+    background-image: url('../images/accordion-show.png') !important;
+    background-position: center;
+    background-size: auto;
+}
+
+.investment-details .items span {
+    margin-left: 0.5rem;
+}
+
+.input-group-text,
+.form-control,
+.form-control:focus {
+    border-radius: 0px;
+    border-color: #fff;
+}
+
+.input-group {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.advantages + .talk-with-us {
+    margin-top: 0rem;
+}
+
+.best-investment-cards:last-child {
+    border-bottom: 0px;
+}
+
+.our-strength + .advantages {
+    margin-top: 6rem;
+}
+
+/*---------------------------------------- make business in dubai end -------------------------------------*/

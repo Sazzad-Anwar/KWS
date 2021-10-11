@@ -10,6 +10,22 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+    .mega-menu.card::before {
+        left: 30%;
+    }
+
+    .card-area.investment-details .items {
+        font-size: 13px;
+    }
+
+    .investment-details .items span {
+        margin-top: 0.4rem;
+    }
+
+    .section-details.full-width {
+        margin: 0px 18rem;
+    }
+
     /* Header Nav CSS */
     .contact {
         margin-right: 25px;
@@ -23,7 +39,7 @@
     /* Header Nav CSS End */
 
     .why-work-with-kws .left-side {
-        height: 50%;
+        height: unset;
     }
 
     .why-work-with-kws .section-details {
@@ -54,7 +70,7 @@
 
     /* why-do-business-with-us */
     section .section-title {
-        font-size: 22px;
+        font-size: 30px;
     }
     /* why-do-business-with-us end */
 
@@ -102,7 +118,7 @@
         padding: 0 15rem;
     }
     .news-update .card {
-        width: 17.8rem;
+        width: 16.8rem;
         height: 22.8rem;
     }
     /* news-update end */
@@ -179,10 +195,101 @@
         font-size: 12px;
     }
     /* company-vision end */
+
+    /* our-leadership */
+    .about-us-page .our-leadership .section-details {
+        width: 89%;
+    }
+    /* our-leadership end */
+
     /*----------------------------- about us page CSS end ---------------------------*/
+    /*----------------------------- latest news update and details CSS ---------------------------*/
+    .about-the-author .author-description {
+        font-size: 13px;
+        color: #5c5c5c;
+    }
+
+    .mainland-company .testimonial-description {
+        height: 75px;
+    }
+
+    .mainland-company .testimonial-description:hover {
+        height: unset;
+    }
+
+    .mainland-company .testimonial-description:hover .details {
+        margin-bottom: 20px;
+    }
+    /*----------------------------- latest news update and details CSS end ---------------------------*/
+
+    .inquiry-form .free-consultation .card {
+        width: 100%;
+    }
+
+    .investment-details .title {
+        font-size: 19px;
+    }
+    .investment-details .details {
+        font-size: 10px;
+    }
+    .best-investment-cards > img {
+        height: 300px;
+    }
+    .investment-details .sub-title {
+        font-size: 18px;
+    }
+    .investment-details .items {
+        font-size: 8px;
+        line-height: 23px;
+    }
+
+    .hero .page-title {
+        font-size: 37px;
+    }
+
+    .card-with-img-details .title {
+        font-size: 22px !important;
+    }
+
+    .card-with-img-details .details {
+        font-size: 9px !important;
+    }
+
+    .why-work-with-kws.make-business-in-dubai .card-body {
+        padding-left: 4rem;
+    }
+
+    .frequently-ask-question .accordion-header button {
+        font-size: 16px !important;
+    }
+
+    .frequently-ask-question .accordion-body {
+        font-size: 14px !important;
+    }
+
+    .faq-person-img img {
+        height: 401px;
+        width: auto;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1599px) {
+    .mega-menu.card::before {
+        left: 35%;
+    }
+
+    .card-area.investment-details .items {
+        font-size: 14px;
+    }
+
+    .investment-details .items span {
+        margin-top: 0.4rem;
+    }
+
+    .section-details.full-width {
+        margin: 0 21rem;
+    }
+
     .who-we-are .statistics .card-body p {
         font-size: 13px;
     }
@@ -282,7 +389,7 @@
     /* news-update */
     .news-update .card {
         position: relative;
-        width: 20.8rem;
+        width: 19.8rem;
         height: 26.8rem;
     }
     .news-update .card .card-body .news-details .news-title {
@@ -360,7 +467,87 @@
         height: 13.8rem;
     }
     /* company-vision end */
+
+    .mainland-company .testimonial-description {
+        height: 75px;
+    }
+
+    .mainland-company .testimonial-description:hover {
+        height: unset;
+    }
+
+    .mainland-company .testimonial-description:hover .details {
+        margin-bottom: 20px;
+    }
     /*-------------------------- about us page CSS end --------------------------*/
+    /*-------------------------- Contact us page CSS --------------------------*/
+    .contact-us .company-contact-area .card .right-side p {
+        font-size: 20px;
+    }
+
+    .contact-us .company-contact-area .card .right-side .address {
+        font-size: 14px;
+    }
+
+    .inquiry-form .free-consultation .card {
+        width: 100%;
+    }
+
+    /*-------------------------- Contact us page CSS end --------------------------*/
+
+    .investment-details .title {
+        font-size: 22px;
+    }
+    .investment-details .details {
+        font-size: 12px;
+    }
+    .best-investment-cards > img {
+        height: 350px;
+    }
+    .investment-details .sub-title {
+        font-size: 20px;
+    }
+    .investment-details .items {
+        font-size: 10px;
+        line-height: 31px;
+    }
+
+    .hero .page-title {
+        font-size: 41px;
+    }
+
+    .card-with-img-details .title {
+        font-size: 22px !important;
+    }
+
+    .card-with-img-details .details {
+        font-size: 9px !important;
+    }
+
+    .frequently-ask-question .accordion-header button {
+        font-size: 18px !important;
+    }
+
+    .frequently-ask-question .accordion-body {
+        font-size: 14px !important;
+    }
+
+    .faq-person-img img {
+        height: 500px;
+        width: auto;
+    }
+
+    .best-investment-cards.branch-representative > img {
+        height: auto !important;
+    }
+
+    .best-investment-cards.branch-representative .investment-details .items {
+        font-size: 14px;
+    }
+
+    .best-investment-cards.branch-representative .investment-details .details {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 1600px) {
